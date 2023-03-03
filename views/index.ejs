@@ -37,8 +37,9 @@
                 <p style="visibility: hidden" id="readmore">
                     <%= a.mark %>
                 </p>
-
+<!-- button with click event -->
                 <button type="button" onclick=vis() class="btn btn-secondary">Read More</button>
+<!-- type submit -->
 
                 <button type="submit" class="btn btn-info">Edit</button>
                 <a href="/delete/:<%= a.id %>"><button type="button" class="btn btn-secondary">Delete</button>
@@ -50,6 +51,7 @@
     </div>
     <script>
         function vis(){
+            // get element for reading
               document.getElementById('readmore').style.visibility="visible";
         }
     </script>
